@@ -1,10 +1,11 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
-// completed 181
+// completed 187
 
 import React, { useState } from 'react'
 import Accordion from './components/Accordion'
 import Dropdown, { IOption } from './components/DropDown'
+import Route from './components/Route'
 import Search from './components/Search'
 import Translate from './components/Translate'
 import ITitleContent from './ITitleContent'
@@ -48,7 +49,10 @@ const App: React.FC = () => {
       <div>
         {/* <Accordion items={items}  /> */}
         {/* <Search></Search> */}
-        <Translate></Translate>
+        {/* <Translate></Translate> */}
+        {/* <Route path="/" > <Accordion items={items}  /> </Route> */}
+        <Route path="/Search" >  <Search></Search> </Route>
+        <Route path="/Translate" > <Translate></Translate> </Route>
       </div>
     </div>
   )

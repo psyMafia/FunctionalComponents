@@ -1,4 +1,3 @@
-import { render } from '@testing-library/react'
 import React, { useEffect, useRef, useState } from 'react'
 
 export interface IOption {
