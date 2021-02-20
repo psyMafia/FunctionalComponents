@@ -10,7 +10,7 @@
     "@types/node": "^14.14.7",
     "@types/react": "^16.9.56",
     "@types/react-dom": "^16.9.9",
-    "axios": "^0.21.0",
+    "axios": "^0.21.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.0",
@@ -40,5 +40,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "@typescript-eslint/parser": "^4.15.1",
+    "eslint": "^7.20.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-react": "^7.22.0"
   }
 }

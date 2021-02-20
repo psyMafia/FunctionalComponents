@@ -1,22 +1,18 @@
-import React, { useState } from "react";
-import ITitleContent from '../ITitleContent';
+import React, { FunctionComponent, useState } from 'react'
+import ITitleContent from '../ITitleContent'
 
+const Accordion : FunctionComponent<{ items: ITitleContent[] }> = (props: { items: ITitleContent[] }) => {
+  const [activeIndex, setActiveIndex] = useState(-1)
 
-const Accordion = (props: { items: ITitleContent[] }) => {
+  const onItemClickHandler = (i: number) => {
+    console.log('onItemClickHandler item clicked:', i)
+    setActiveIndex(i)
+  }
 
+  const renderendItemd = props.items.map((x, i) => {
+    const active = i === activeIndex ? 'active' : ''
 
-    const [activeIndex, setActiveIndex] = useState(-1);
-
-    const onItemClickHandler = (i: number) => {
-        console.log("onItemClickHandler item clicked:", i)
-        setActiveIndex(i);
-    }
-
-    const renderendItemd = props.items.map((x, i) => {
-
-        const active = i === activeIndex ? "active" : "";
-
-        return (
+    return (
             <div className="ui styled accordion" key={x.title}>
                 <div className={`title ${active}`}
                     onClick={() => onItemClickHandler(i)}>
@@ -27,14 +23,13 @@ const Accordion = (props: { items: ITitleContent[] }) => {
                     {x.content}
                 </div>
             </div>
-        )
-    })
+    )
+  })
 
-
-    return (
+  return (
         <div>
             {renderendItemd}
         </div>
-    );
+  )
 }
-export default Accordion;
+export default Accordion
