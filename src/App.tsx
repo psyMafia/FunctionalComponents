@@ -1,10 +1,11 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
-// completed 187
+// completed 193
 
 import React, { useState } from 'react'
 import Accordion from './components/Accordion'
 import Dropdown, { IOption } from './components/DropDown'
+import Header from './components/Header'
 import Route from './components/Route'
 import Search from './components/Search'
 import Translate from './components/Translate'
@@ -45,14 +46,14 @@ const App: React.FC = () => {
 
   return (
     <div className="ui container segment">
-
+      <Header></Header>
       <div>
         {/* <Accordion items={items}  /> */}
         {/* <Search></Search> */}
         {/* <Translate></Translate> */}
         {/* <Route path="/" > <Accordion items={items}  /> </Route> */}
-        <Route path="/Search" >  <Search></Search> </Route>
-        <Route path="/Translate" > <Translate></Translate> </Route>
+        <Route path="/search" >  <Search></Search> </Route>
+        <Route path="/translate" > <Translate></Translate> </Route>
       </div>
     </div>
   )

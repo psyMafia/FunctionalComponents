@@ -1,6 +1,5 @@
 import Axios from "axios"
 import React, { useEffect, useState } from "react"
-import { threadId } from "worker_threads";
 import { IOption } from "./DropDown"
 
 interface IConvertProps {

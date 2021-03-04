@@ -22,7 +22,7 @@ const Dropdown: React.FC<IOptionProps> = (props: IOptionProps) => { // find solu
 
         console.log("useEffect")
 
-        const clickHandler = (event: any) => {
+        const clickHandler = (event: MouseEvent) => {
 
 
 
